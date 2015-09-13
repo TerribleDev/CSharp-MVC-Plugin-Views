@@ -1,0 +1,34 @@
+﻿@model DisplayTemplateExample.Web.Models.ViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row" id="gallery">
+    @foreach (var x in Model.Tiles)
+    {
+        <div class="col-md-4" >
+            @Html.Partial("Tiles", x)
+        </div>
+    }
+   
+</div>
+
+@section scripts{
+    <script>
+    $(document).ready(function () {
+        // Get an array of all element heights
+        var elementHeights = $('#gallery').children().map(function () {
+            return $(this).height();
+        }).get();
+
+        // Math.max takes a variable number of arguments
+        // `apply` is equivalent to passing each height as an argument
+        var maxHeight = Math.max.apply(null, elementHeights);
+
+        // Set each height to the max height
+        $('#gallery').children().height(maxHeight);
+    });
+</script>
+    
+    }
