@@ -22,9 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
-.thumbnail{
-    height:100%
+
+.thumbnail {
+    height: 100%;
 }
-#gallery{
-    margin-top: 50px
+
+#gallery {
+    margin-top: 50px;
 }
