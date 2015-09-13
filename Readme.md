@@ -4,4 +4,4 @@ This is a simple MVC application to show the Power of custom `Display Templates`
 
 One tile is a simple text tile to show text on the DOM, the other tile is an image tile that displays a responsive image. using this type of Architecture you could make an upload tile, or additional behaviors 
 
-![Screen Capture](./Capture.png?raw=true "")
+![Screen Capture](./Capture.PNG?raw=true "")
