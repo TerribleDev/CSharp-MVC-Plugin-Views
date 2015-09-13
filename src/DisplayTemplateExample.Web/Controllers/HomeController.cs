@@ -14,24 +14,11 @@ namespace DisplayTemplateExample.Web.Controllers
                 {
                     new ImageTile {src = "/Content/smpl.jpg" },
                     new TextTile {Text = "Sample text a" },
-                    new TextTile {Text = "awesome text b" }
+                    new TextTile {Text = "awesome text b" },
+                    new ImageTile {src = "/Content/g.png" }
                 }
             };
             return View(viewModel);
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
         }
     }
 }
